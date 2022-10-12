@@ -1,0 +1,37 @@
+@import "variables.css";
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--neutral-2);
+}
+
+input {
+  line-height: 1.25;
+  appearance: none;
+}

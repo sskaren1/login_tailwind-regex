@@ -1,0 +1,14 @@
+@import 'variables.css';
+
+body{
+    font-family: var(--secondary-font);
+    font-weight: var(--medium);
+}
+
+h1, h2 {
+    font-family: var(--main-font);
+    font-weight: var(--bold);
+    text-align: center;    
+}
+
+

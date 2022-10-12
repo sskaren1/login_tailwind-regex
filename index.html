@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="container mx-auto  px-4 py-8 rounded-lg shadow-md">
+        <h1 class="text-purple-900 text-3xl font-bold mb-6">Login</h1>
+
+        <form class="form" id="formLogin">
+          <div class="form__group--email">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-1"
+              for="email"
+              >Email</label
+            >
+            <div class="form__input">
+              <input
+                class="shadow border rounded w-full p-2 mt-1 mb-4 text-gray-700 focus:outline-none focus:shadow-outline"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingrese su Email"
+                autocomplete="off"
+                required
+              />
+              <p
+                class="alert-error text-xs text-center text-red-700 bg-red-100 border border-red-400 p-1 mt-1 mb-4 rounded hidden"
+                id="emailError"
+                role="alert"
+              >
+                Email incorrecto
+              </p>
+            </div>
+          </div>
+
+          <div class="form__group--password">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-1"
+              for="password"
+              >Password</label
+            >
+            <div>
+              <!-- border-red-500 -->
+              <input
+                class="shadow border rounded w-full p-2 mt-1 mb-4 text-gray-700 focus:outline-none focus:shadow-outline"
+                type="password"
+                name="password"
+                placeholder="Ingrese su Contraseña"
+                id="password"
+                required
+              />
+              <p
+                class="alert-error text-xs text-center text-red-700 bg-red-100 border border-red-400 p-1 mt-1 mb-4 rounded hidden"
+                id="password-error"
+                role="alert"
+              >
+                El password debe tener un mín. de 6 digitos y máx. de 15 digitos
+              </p>
+            </div>
+          </div>
+
+          <div class="form-button">
+            <button
+              class="bg-purple-900 hover:bg-purple-500 text-white font-bold w-full py-2 mt-4 mb-2 rounded focus:outline-none focus:shadow-outline block mx-auto cursor-not-allowed"
+              type="submit"
+              id="btnLogin"
+              disabled
+            >
+              Iniciar Sesion
+            </button>
+            <p
+              class="alert-success text-xs text-center text-lime-600 bg-lime-200 border border-lime-400 p-1 mt-1 mb-4 rounded hidden"
+              id="form-success"
+              role="alert"
+            >
+              Formulario enviado!!
+            </p>
+          </div>
+        </form>
+        <div class="burbujas">
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+      </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
